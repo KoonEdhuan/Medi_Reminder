@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_new_medicine">Add new medicine</string>
+    <string name="all_medications">All Medications</string>
+    <string name="active_medications">Active Medications</string>
+</resources>
