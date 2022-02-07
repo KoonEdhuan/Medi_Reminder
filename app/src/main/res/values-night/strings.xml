@@ -3,4 +3,26 @@
     <string name="add_new_medicine">Add new medicine</string>
     <string name="all_medications">All Medications</string>
     <string name="active_medications">Active Medications</string>
+
+    <string-array name="medicine_types">
+        <item>Pill</item>
+        <item>Capsule</item>
+        <item>Syrup</item>
+        <item>Injection</item>
+    </string-array>
+
+    <string-array name="dosage_per_day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>other</item>
+    </string-array>
+
+    <string-array name="dose_frequency">
+        <item>Once daily</item>
+        <item>2 times a day</item>
+        <item>3 times a day</item>
+        <item>Every number of hours</item>
+    </string-array>
+
 </resources>

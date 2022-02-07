@@ -21,14 +21,14 @@ private var _binding: FragmentAllmedicationsBinding? = null
     container: ViewGroup?,
     savedInstanceState: Bundle?
   ): View {
-    val dashboardViewModel =
+    val allMedicationsViewModel =
             ViewModelProvider(this).get(AllMedicationsViewModel::class.java)
 
     _binding = FragmentAllmedicationsBinding.inflate(inflater, container, false)
     val root: View = binding.root
 
     val textView: TextView = binding.textDashboard
-    dashboardViewModel.text.observe(viewLifecycleOwner) {
+    allMedicationsViewModel.text.observe(viewLifecycleOwner) {
       textView.text = it
     }
     return root
