@@ -14,6 +14,7 @@ data class MedicineDetails(
     var startDate: Date?,
     var endDate: Date?,
     var continuous: Boolean,
+    var noOfDays: Int? = 0,
     var dosePerDay: Int? = 0,
     var active:Boolean,
     var firstDoseTime: Date?,

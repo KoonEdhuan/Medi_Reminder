@@ -37,7 +37,7 @@
                     android:textColor="@color/purple_500"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:layout_marginLeft="7dp">
+                    android:layout_marginStart="7dp">
 
                 </com.google.android.material.textview.MaterialTextView>
 
@@ -115,11 +115,48 @@
                     >
 
                     <AutoCompleteTextView
-                        android:id="@+id/autoComplete_dosagePerDay"
+                        android:id="@+id/autoComplete_dosageFrequency"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:inputType="none" />
+
+                    <Button
+                        android:id="@+id/dateButton1"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Start date:"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Duration"
+                        android:textColor="#737877"
+                        android:layout_marginTop="8dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="7dp"
+                        />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radio_button_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Continuous" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radio_button_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Number of days" />
+                    </RadioGroup>
 
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -146,21 +183,43 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
                     android:text="Schedule"
                     android:textColor="@color/purple_500"
                     android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="7dp" />
+                    android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/dateButton1"
+                    android:id="@+id/timeButton1"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
+                    android:layout_margin="8dp"
                     android:text="00:00"
-                    android:textSize="16sp"
                     android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:icon="@drawable/ic_time_24" />
+
+                <Button
+                    android:id="@+id/timeButton2"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="00:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:icon="@drawable/ic_time_24" />
+
+                <Button
+                    android:id="@+id/timeButton3"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="00:00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
                     app:icon="@drawable/ic_time_24" />
             </LinearLayout>
 
